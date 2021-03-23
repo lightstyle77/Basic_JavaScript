@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Дан код:
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);        // 2 - преинкремент 
+        d = b++; alert(d);        // 1 - постинкремент
+        c = (2 + ++a); alert(c);  // 5 - в строке 14 переменной а присвоилось значение = 2, в строке 16 преинкрементом увеличиваем до 3
+        d = (2 + b++); alert(d);  // 4 - в строке 15 переменной а присвоилось значение = 1, в строке 16 постинкрементом увеличиваем до 2
+        alert(a);                 // 3 - в строке 13 a=1, в строке 14 a=2, в строке 16 a=3
+        alert(b);                 // 3 - в строке 13 b=1, в строке 15 b=2, в строке 17 b=3 
+       // Почему код даёт именно такие результаты ?
+    </script>
+
+</body>
+
+</html>
