@@ -14,15 +14,32 @@
         В зависимости от переданного значения операции выполнить одну из арифметических операций
         (использовать функции из пункта 5) и вернуть полученное значение (использовать switch). */
 
+        let a = 5, b = 9
+
+        function additional(arg1, arg2) {
+            return arg1 + arg2
+        }
+
+        function subtraction(arg1, arg2) {
+            return arg1 - arg2
+        }
+
+        function multiplication(arg1, arg2) {
+            return arg1 * arg2
+        }
+
+        function division(arg1, arg2) {
+            return arg1 / arg2
+        }
         function mathOperation(arg1, arg2, operation) {
             switch (operation) {
-                case 'addition': alert(arg1 + arg2)
+                case 'addition': alert(additional(arg1, arg2))
                     break;
-                case 'subtraction': alert(arg1 - arg2)
+                case 'subtraction': alert(subtraction(arg1, arg2))
                     break;
-                case 'multiplication': alert(arg1 * arg2)
+                case 'multiplication': alert(multiplication(arg1, arg2))
                     break;
-                case 'division': alert(arg1 / arg2)
+                case 'division': alert(division(arg1, arg2))
                     break;
             }
 
