@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 8. *С помощью рекурсии организовать функцию возведения числа в степень.
+        // Формат: function power(val, pow), где val – заданное число, pow – степень.
+
+        // alert -> power(2, 3) -> 8
+        // pow = 2
+        // val = 2
+        // fixResult = 0 -> power (2, 2) -> 4
+        // pow = 1
+        // val = 2
+        // fixResult = 0 -> power (2, 1) -> 0 -> 2 
+
+
+
+
+        function power(val, pow) {
+            if (pow > 1) {
+                pow -= 1
+                fixResult = power(val, pow)
+                if (fixResult == 0) fixResult = val
+                return fixResult * val
+            }
+            if (pow < 0) {
+                pow += 1
+                fixResult = power(val, pow)
+                if (fixResult == 0) fixResult = val / val
+                return fixResult / val
+            }
+            return 0
+        }
+        alert(power(2, 3))
+    </script>
+
+</body>
+
+</html>
