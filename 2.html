@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 2.Продолжить работу с интернет-магазином:
+        // 2.1. В прошлом домашнем задании вы реализовали корзину на базе массивов. Какими объектами можно заменить их элементы?
+        // 2.2. Реализуйте такие объекты.
+        // 2.3. Перенести функционал подсчета корзины на объектно-ориентированную базу.
+
+        let iPhone = {
+            model: '12',
+            color: 'black',
+            price: 1000
+        }
+        let samsung = {
+            model: 'S',
+            color: 'blue',
+            price: 800
+        }
+
+        let myBucket = [[iPhone, 1], [samsung, 3]]
+
+        function bucketSumm() {
+            sum = 0
+            for (i = 0; i < myBucket.length; i++) {
+                sum += myBucket[i][0].price * myBucket[i][1]
+            }
+            return sum
+        }
+        alert(bucketSumm())
+
+
+    </script>
+
+</body>
+
+</html>
