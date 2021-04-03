@@ -1,0 +1,136 @@
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='container' id='cont'>
+        <script>
+            let container = document.querySelector('.container')
+            container.style.background = 'deepskyblue'
+            container.style.width = '550px'
+            container.style.height = '550px'
+            container.style.paddingLeft = '50px'
+            container.style.paddingBottom = '50px'
+            container.style.margin = '0 auto'
+            container.style.display = 'flex'
+            container.style.flexWrap = 'wrap'
+
+            function my_initiation() {
+                let cell = document.createElement('div')
+                cell.className = 'cell'
+                cont.append(cell)
+                cell.style.width = '50px'
+                cell.style.height = '50px'
+                cell.style.margin = '0px'
+                cell.style.padding = '0px'
+                cell.style.fontSize = '30px'
+                cell.style.fontWeight = 'bold'
+                cell.style.textAlign = 'center'
+
+            }
+            window.onload = my_initiation;
+
+            for (let n = 0; (n != 121); n++) {
+                window.onload = my_initiation()
+            }
+
+            let masCell = document.querySelectorAll('.cell')
+            for (let i = 0; (i < masCell.length); i++) {
+                let c
+                if (i % 2 == 0) {
+                    c = 'black'
+                } else {
+                    c = 'white'
+                }
+                masCell[i].style.background = c
+                if ((i > 33) && (i < 42)) {
+                    masCell[i].innerText = ''
+                }
+                if ((i > 88) && (i < 97)) {
+                    masCell[i].innerText = ''
+                }
+
+
+                for (let f = 89; (f < 108); f++) {
+                    masCell[f].style.color = 'deepskyblue'
+                }
+                for (let f = 0; (f < 22); f++) {
+                    masCell[f].style.background = 'deepskyblue'
+                }
+                for (let f = 110; (f < 121); f++) {
+                    masCell[f].style.background = 'deepskyblue'
+                }
+
+                masCell[22].style.background = 'deepskyblue'
+                masCell[33].style.background = 'deepskyblue'
+                masCell[44].style.background = 'deepskyblue'
+                masCell[55].style.background = 'deepskyblue'
+                masCell[66].style.background = 'deepskyblue'
+                masCell[77].style.background = 'deepskyblue'
+                masCell[88].style.background = 'deepskyblue'
+                masCell[99].style.background = 'deepskyblue'
+                masCell[31].style.background = 'deepskyblue'
+                masCell[32].style.background = 'deepskyblue'
+                masCell[42].style.background = 'deepskyblue'
+                masCell[43].style.background = 'deepskyblue'
+                masCell[53].style.background = 'deepskyblue'
+                masCell[54].style.background = 'deepskyblue'
+                masCell[64].style.background = 'deepskyblue'
+                masCell[65].style.background = 'deepskyblue'
+                masCell[75].style.background = 'deepskyblue'
+                masCell[76].style.background = 'deepskyblue'
+                masCell[86].style.background = 'deepskyblue'
+                masCell[87].style.background = 'deepskyblue'
+                masCell[97].style.background = 'deepskyblue'
+                masCell[98].style.background = 'deepskyblue'
+                masCell[108].style.background = 'deepskyblue'
+                masCell[109].style.background = 'deepskyblue'
+
+                masCell[12].innerText = 'A'
+                masCell[13].innerText = 'B'
+                masCell[14].innerText = 'C'
+                masCell[15].innerText = 'D'
+                masCell[16].innerText = 'E'
+                masCell[17].innerText = 'F'
+                masCell[18].innerText = 'G'
+                masCell[19].innerText = 'H'
+                masCell[111].innerText = 'A'
+                masCell[112].innerText = 'B'
+                masCell[113].innerText = 'C'
+                masCell[114].innerText = 'D'
+                masCell[115].innerText = 'E'
+                masCell[116].innerText = 'F'
+                masCell[117].innerText = 'G'
+                masCell[118].innerText = 'H'
+
+                masCell[97].style.color = 'black'
+                masCell[99].style.color = 'black'
+
+                masCell[22].innerText = '1'
+                masCell[33].innerText = '2'
+                masCell[44].innerText = '3'
+                masCell[55].innerText = '4'
+                masCell[66].innerText = '5'
+                masCell[77].innerText = '6'
+                masCell[88].innerText = '7'
+                masCell[99].innerText = '8'
+                masCell[31].innerText = '1'
+                masCell[42].innerText = '2'
+                masCell[53].innerText = '3'
+                masCell[64].innerText = '4'
+                masCell[75].innerText = '5'
+                masCell[86].innerText = '6'
+                masCell[97].innerText = '7'
+                masCell[108].innerText = '8'
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
